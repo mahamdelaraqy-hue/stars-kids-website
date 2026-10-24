@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10141e">
+  <meta name="description" content="تفاصيل منتجات Stars Kids والسعر والمخزون المتاح.">
+  <title>تفاصيل المنتج | Stars Kids</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="product.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html#home" aria-label="Stars Kids home">
+      <span class="brand-star">☆</span>
+      <span class="brand-copy"><strong>Stars<span>Kids</span></strong><small>Little Stars, Big Dreams</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="فتح القائمة" aria-expanded="false">☰</button>
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html#home" data-ar="الرئيسية" data-en="Home">الرئيسية</a>
+      <a href="index.html#catalog" data-ar="المنتجات" data-en="Products">المنتجات</a>
+      <a href="index.html#collections" data-ar="التصنيفات" data-en="Collections">التصنيفات</a>
+      <a href="contact.html" data-ar="تواصل معنا" data-en="Contact">تواصل معنا</a>
+    </nav>
+    <div class="header-tools">
+      <button class="language-toggle" id="languageToggle" aria-label="Switch language">EN</button>
+      <a class="icon-link" href="index.html#catalog" aria-label="Browse products">⌕</a>
+    </div>
+  </header>
+  <main>
+    <section class="product-detail section" id="productDetail" aria-live="polite">
+      <p class="no-products" data-ar="جارٍ تحميل تفاصيل المنتج..." data-en="Loading product details...">جارٍ تحميل تفاصيل المنتج...</p>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="index.html#home"><span class="brand-star">☆</span><span class="brand-copy"><strong>Stars<span>Kids</span></strong><small>Little Stars, Big Dreams</small></span></a>
+    <p data-ar="أناقة صغيرة، أحلام كبيرة." data-en="Little style, big dreams.">أناقة صغيرة، أحلام كبيرة.</p>
+    <div class="footer-links"><a href="index.html#catalog" data-ar="المنتجات" data-en="Products">المنتجات</a><a href="contact.html" data-ar="تواصل معنا" data-en="Contact">تواصل معنا</a></div>
+    <small class="copyright">© <span id="year"></span> Stars Kids. <span data-ar="جميع الحقوق محفوظة." data-en="All rights reserved.">جميع الحقوق محفوظة.</span></small>
+  </footer>
+  <script src="product-page.js"></script>
+</body>
+</html>

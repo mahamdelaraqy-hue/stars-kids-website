@@ -1,0 +1,90 @@
+[
+  {
+    "id": "spark-dress",
+    "category": "girlswear",
+    "nameAr": "فستان نجم",
+    "nameEn": "Spark Dress",
+    "descriptionAr": "فستان أنيق للطفلة مع تفاصيل ناعمة ومريح في الاستخدام اليومي.",
+    "descriptionEn": "Elegant dress for little girls with soft details and daily comfort.",
+    "price": "249 ر.س",
+    "priceEn": "249 SAR",
+    "image": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=900&q=80"
+  },
+  {
+    "id": "mini-set",
+    "category": "girlswear",
+    "nameAr": "طقم صغيرات",
+    "nameEn": "Little Star Set",
+    "descriptionAr": "طقم مريح ومميز للأيام العائلية والرحلات الصغيرة.",
+    "descriptionEn": "Comfortable and charming set for family days and little outings.",
+    "price": "199 ر.س",
+    "priceEn": "199 SAR",
+    "image": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=900&q=80"
+  },
+  {
+    "id": "tiny-baby-set",
+    "category": "babywear",
+    "nameAr": "طقم مولود أنيق",
+    "nameEn": "Sweet Baby Set",
+    "descriptionAr": "طقم ناعم ومريح لخروجات الرضيع بألوان هادئة.",
+    "descriptionEn": "Soft and comfortable set for baby's outings in gentle tones.",
+    "price": "179 ر.س",
+    "priceEn": "179 SAR",
+    "image": "https://images.unsplash.com/photo-1516627145497-ae6968895b74?auto=format&fit=crop&w=900&q=80"
+  },
+  {
+    "id": "cotton-baby-set",
+    "category": "babywear",
+    "nameAr": "طقم قطني فاخر",
+    "nameEn": "Premium Cotton Set",
+    "descriptionAr": "قطن ناعم وراحة عالية في كل حركة للرضيع.",
+    "descriptionEn": "Soft cotton with high comfort for every baby movement.",
+    "price": "219 ر.س",
+    "priceEn": "219 SAR",
+    "image": "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?auto=format&fit=crop&w=900&q=80"
+  },
+  {
+    "id": "adventure-set",
+    "category": "boyswear",
+    "nameAr": "طقم مغامرات",
+    "nameEn": "Adventure Set",
+    "descriptionAr": "ملابس عملية ومريحة للرحلات اليومية والألعاب الخارجية.",
+    "descriptionEn": "Practical and comfortable clothes for daily adventures and play.",
+    "price": "229 ر.س",
+    "priceEn": "229 SAR",
+    "image": "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?auto=format&fit=crop&w=900&q=80"
+  },
+  {
+    "id": "classic-boy-shirt",
+    "category": "boyswear",
+    "nameAr": "قميص كلاسيكي",
+    "nameEn": "Classic Tee",
+    "descriptionAr": "قميص أنيق يحتوي على تفاصيل أنيقة تناسب أجواء اليوم.",
+    "descriptionEn": "Smart shirt with refined details for everyday wear.",
+    "price": "149 ر.س",
+    "priceEn": "149 SAR",
+    "image": "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=900&q=80"
+  },
+  {
+    "id": "star-bag",
+    "category": "accessories",
+    "nameAr": "حقيبة نجم",
+    "nameEn": "Star Bag",
+    "descriptionAr": "حقيبة صغيرة تجمع بين الشكل الأنيق والراحة في الاستخدام.",
+    "descriptionEn": "A small bag that combines style and practical everyday use.",
+    "price": "129 ر.س",
+    "priceEn": "129 SAR",
+    "image": "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=900&q=80"
+  },
+  {
+    "id": "gold-hairclip",
+    "category": "accessories",
+    "nameAr": "مشبك شعر ذهبي",
+    "nameEn": "Gold Hair Clip",
+    "descriptionAr": "إكسسوار أنيق يضيف لمسة فخمة لطيفتك اليومية.",
+    "descriptionEn": "Elegant accessory that adds a refined touch to daily styling.",
+    "price": "89 ر.س",
+    "priceEn": "89 SAR",
+    "image": "https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=900&q=80"
+  }
+]

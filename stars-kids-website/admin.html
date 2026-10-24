@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10141e">
+  <title>إدارة المنتجات والطلبات | Stars Kids</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body class="admin-body">
+  <header class="site-header">
+    <a class="brand" href="index.html"><span class="brand-star">☆</span><span class="brand-copy"><strong>Stars<span>Kids</span></strong><small>Store administration</small></span></a>
+    <a class="admin-home-link" href="index.html" data-ar="العودة للموقع" data-en="Back to website">العودة للموقع</a>
+  </header>
+  <main class="admin-page">
+    <section class="admin-login" id="loginPanel">
+      <span class="section-kicker" data-ar="لوحة الإدارة" data-en="ADMIN PANEL">لوحة الإدارة</span>
+      <h1 data-ar="تسجيل دخول المسؤول" data-en="Administrator sign in">تسجيل دخول المسؤول</h1>
+      <p data-ar="إدارة المنتجات والأسعار والمخزون واستفسارات العملاء." data-en="Manage products, prices, stock and customer inquiries.">إدارة المنتجات والأسعار والمخزون واستفسارات العملاء.</p>
+      <form id="loginForm">
+        <label for="adminPassword" data-ar="كلمة مرور الإدارة" data-en="Admin password">كلمة مرور الإدارة</label>
+        <input id="adminPassword" name="password" type="password" autocomplete="current-password" required>
+        <button class="button button-gold" type="submit" data-ar="دخول" data-en="Sign in">دخول</button>
+      </form>
+      <p class="admin-status" id="loginStatus" role="status" aria-live="polite"></p>
+    </section>
+
+    <section class="admin-dashboard" id="dashboard" hidden>
+      <div class="admin-heading">
+        <div><span class="section-kicker" data-ar="إدارة المتجر" data-en="STORE MANAGEMENT">إدارة المتجر</span><h1 data-ar="المنتجات والمخزون" data-en="Products and inventory">المنتجات والمخزون</h1></div>
+        <button class="button button-outline-dark" id="logoutButton" type="button" data-ar="تسجيل الخروج" data-en="Sign out">تسجيل الخروج</button>
+      </div>
+      <div class="admin-columns">
+        <form class="admin-product-form" id="productForm">
+          <h2 id="productFormTitle" data-ar="إضافة منتج" data-en="Add product">إضافة منتج</h2>
+          <label for="productId">معرّف المنتج (بالإنجليزية)</label><input id="productId" name="id" pattern="[a-zA-Z0-9\x2d]+" required>
+          <label for="productCategory">التصنيف</label>
+          <select id="productCategory" name="category" required>
+            <option value="babywear">ملابس الرضع</option><option value="girlswear">ملابس البنات</option><option value="boyswear">ملابس الأولاد</option><option value="accessories">إكسسوارات</option>
+          </select>
+          <label for="productNameAr">اسم المنتج بالعربية</label><input id="productNameAr" name="name_ar" required maxlength="120">
+          <label for="productNameEn">اسم المنتج بالإنجليزية</label><input id="productNameEn" name="name_en" required maxlength="120">
+          <label for="productDescriptionAr">وصف المنتج بالعربية</label><textarea id="productDescriptionAr" name="description_ar" rows="3" required maxlength="1000"></textarea>
+          <label for="productDescriptionEn">وصف المنتج بالإنجليزية</label><textarea id="productDescriptionEn" name="description_en" rows="3" required maxlength="1000"></textarea>
+          <div class="admin-form-row">
+            <div><label for="productPrice">السعر</label><input id="productPrice" name="price" type="number" min="0" step="0.01" required></div>
+            <div><label for="productCurrency">العملة</label><input id="productCurrency" name="currency" value="EGP" pattern="[A-Za-z]{3,8}" required></div>
+            <div><label for="productStock">الكمية المتاحة</label><input id="productStock" name="stock" type="number" min="0" step="1" required></div>
+          </div>
+          <label for="productImage">رابط صورة HTTPS</label><input id="productImage" name="image_url" type="url" pattern="https://.+" required>
+          <label class="sample-checkbox"><input id="productSample" name="is_sample" type="checkbox"><span>بيانات وصورة تجريبية (لا تعرض كمنتج مؤكد)</span></label>
+          <div class="admin-form-actions"><button class="button button-gold" id="saveProductButton" type="submit">حفظ المنتج</button><button class="button button-outline-dark" id="cancelEditButton" type="button" hidden>إلغاء التعديل</button></div>
+          <p class="admin-status" id="productStatus" role="status" aria-live="polite"></p>
+        </form>
+
+        <section class="admin-product-list">
+          <h2 data-ar="قائمة المنتجات" data-en="Product list">قائمة المنتجات</h2>
+          <div id="adminProducts"></div>
+        </section>
+      </div>
+
+      <section class="admin-inquiries">
+        <h2 data-ar="استفسارات العملاء المحفوظة" data-en="Saved customer inquiries">استفسارات العملاء المحفوظة</h2>
+        <div id="adminInquiries"></div>
+      </section>
+    </section>
+  </main>
+  <script src="admin.js"></script>
+</body>
+</html>

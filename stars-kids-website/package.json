@@ -1,0 +1,12 @@
+{
+  "name": "stars-kids-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Stars Kids website with a SQLite-backed product catalog and customer inquiries",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=22.5.0"
+  }
+}
